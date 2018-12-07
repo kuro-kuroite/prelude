@@ -90,7 +90,7 @@ format js files in project
 lint js files in project
 
 ### development environmenmt
-
+ 
 * Git Bash on Windows 10
 
 ```
@@ -98,6 +98,15 @@ Windows 10 version 1803
 Git Bash git version 2.18.0.windows.1
 Yarn 1.9.4
 Node.js v8.11.3
+scoop 133b4f99
+```
+
+```bash
+scoop install node-lts
+scoop install yarn
+// Git Bash
+cd path/to/npm_template
+yarn
 ```
 
 * Ubuntu on Vagrant on VirtualBox on Windows 10
@@ -111,6 +120,15 @@ git version 2.19.2
 nodenv 1.1.2-69-gced0e70
 Node.js v8.11.4
 Yarn 1.12.3
+```
+
+```bash
+// 管理者権限で Git Bash or Powershell を起動 (symlink で落ちるため)
+cd path/to/npm_template
+vagrant up
+vagrant ssh
+cd /vagrant
+yarn
 ```
 
 特に，Windows と Vagrant 関係で，一発で yarn install が通ることはないので，

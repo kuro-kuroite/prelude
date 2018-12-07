@@ -112,3 +112,9 @@ nodenv 1.1.2-69-gced0e70
 Node.js v8.11.4
 Yarn 1.12.3
 ```
+
+特に，Windows と Vagrant 関係で，一発で yarn install が通ることはないので，
+以下に参考としたリンクを載せておく
+
+- [Windowsホスト上のVagrantのシンボリックリンクフォルダでyarn installできない問題の解決](https://qiita.com/maikya_gu/items/8e313dcd50c39f5a4b0b)
+- [260文字のファイルパスの制限を解除（して node_modules 削除 : Windows 10](https://beachside.hatenablog.com/entry/2017/07/25/183000)

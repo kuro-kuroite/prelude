@@ -91,24 +91,6 @@ lint js files in project
 
 ### development environmenmt
  
-* Git Bash on Windows 10
-
-```
-Windows 10 version 1803
-Git Bash git version 2.18.0.windows.1
-Yarn 1.9.4
-Node.js v8.11.3
-scoop 133b4f99
-```
-
-```bash
-scoop install node-lts
-scoop install yarn
-// Git Bash
-cd path/to/npm_template
-yarn
-```
-
 * Ubuntu on Vagrant on VirtualBox on Windows 10
 
 ```
@@ -136,3 +118,21 @@ yarn
 
 - [Windowsホスト上のVagrantのシンボリックリンクフォルダでyarn installできない問題の解決](https://qiita.com/maikya_gu/items/8e313dcd50c39f5a4b0b)
 - [260文字のファイルパスの制限を解除（して node_modules 削除 : Windows 10](https://beachside.hatenablog.com/entry/2017/07/25/183000)
+
+* Git Bash on Windows 10
+
+```
+Windows 10 version 1803
+Git Bash git version 2.18.0.windows.1
+Yarn 1.9.4
+Node.js v8.11.3
+scoop 133b4f99
+```
+
+```bash
+scoop install node-lts
+scoop install yarn
+// Git Bash
+cd path/to/npm_template
+yarn
+```

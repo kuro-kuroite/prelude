@@ -90,7 +90,7 @@ format js files in project
 lint js files in project
 
 ### development environmenmt
- 
+
 * Ubuntu on Vagrant on VirtualBox on Windows 10
 
 ```

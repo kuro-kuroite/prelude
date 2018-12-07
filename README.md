@@ -91,6 +91,13 @@ lint js files in project
 
 ### development environmenmt
 
+Vagrant and VirtualBox 環境を推奨する．Vagrant は，`yarn install` までの手順は，Windows 単体よりも煩雑である．
+しかし一度，`yarn install` が出来てしまうと，その後の開発で引きおこる
+Windows 固有のエラーの大半を防止することが可能で，無駄な時間が取られにくいためでもある.
+
+あえて，Windows 環境を載せたのは，sample 用として気軽に使うことを想定したためである.
+ただ，ちょっと複雑なことをしようとすると，たちまちエラーの嵐となりやすい．
+
 * Ubuntu on Vagrant on VirtualBox on Windows 10
 
 ```

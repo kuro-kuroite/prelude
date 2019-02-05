@@ -9,11 +9,6 @@ module.exports = {
       "yarn eslint",
       "git add",
     ],
-    "{,!(scripts)/}**/*.js": [
-      "yarn prettier",
-      "yarn eslint",
-      "git add",
-    ],
     // for config file
     "*.js": [
       "yarn prettier",

@@ -8,6 +8,7 @@
 # Icon must end with two \r
 Icon
 
+
 # Thumbnails
 ._*
 
@@ -147,5 +148,9 @@ typings/
 
 # Serverless directories
 .serverless
+
+
+# for all project
+tmp
 
 

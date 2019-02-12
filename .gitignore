@@ -154,3 +154,7 @@ typings/
 tmp
 
 
+# for deploy:sandbox
+sandbox
+
+

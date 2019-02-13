@@ -10,6 +10,7 @@
   "scripts": {
     "deploy": "node ./scripts/babel/deploy.js src/js",
     "deploy:sandbox": "node ./scripts/babel/deploy.js sandbox tmp",
+    "postinstall": "npx patch-package",
     ".babel": "node ./scripts/babel/index.js write-chenged",
     ".babel:all": "node ./scripts/babel/index.js write",
     ".linc": "node ./scripts/tasks/linc.js",

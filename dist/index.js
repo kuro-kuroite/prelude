@@ -9,6 +9,12 @@ Object.defineProperty(exports, "StringBuffer", {
     return _atoms.StringBuffer;
   }
 });
+Object.defineProperty(exports, "pararell", {
+  enumerable: true,
+  get: function get() {
+    return _atoms.pararell;
+  }
+});
 Object.defineProperty(exports, "DateFnsTz", {
   enumerable: true,
   get: function get() {

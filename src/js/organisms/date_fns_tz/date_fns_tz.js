@@ -14,7 +14,15 @@ export default class DateFnsTz {
     });
   }
 
-  format(utcDateTime, formatString, options) {
+  format(
+    utcDateTime,
+    formatString,
+    options = {
+      locale: this.tz.language,
+      timeZone: this.tz.language.timeZone,
+      awareOfUnicodeTokens: true,
+    },
+  ) {
     const localDateTime = utcToZonedTime(
       utcDateTime,
       this.tz.language.timeZone,

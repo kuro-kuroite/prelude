@@ -38,4 +38,13 @@ export default class DateFnsTz {
   zonedTimeToUtc(zonedTime) {
     return zonedTimeToUtc(zonedTime, this.tz.language.timeZone);
   }
+
+  // NOTE: deprecated
+  utcToZonedTime(utcDateTime) {
+    // eslint-disable-next-line no-console
+    console.log('this method is deprecated');
+    // eslint-disable-next-line no-console
+    console.log('please use .toDate()');
+    return utcToZonedTime(utcDateTime, this.tz.language.timeZone);
+  }
 }

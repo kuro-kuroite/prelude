@@ -24,7 +24,7 @@ export default class DateFnsTz {
   }
 
   toDate(dateTime) {
-    return toDate(dateTime, { timeZone: this.tz.language.code });
+    return toDate(dateTime, { timeZone: this.tz.language.timeZone });
   }
 
   zonedTimeToUtc(zonedTime) {

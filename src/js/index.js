@@ -7,10 +7,11 @@ import {
   StringBuffer,
   pararell,
 } from './atoms';
-import { DateFnsTz } from './organisms';
+import { configCommandLineArgs, DateFnsTz } from './organisms';
 
 // eslint-disable-next-line import/prefer-default-export
 export {
+  configCommandLineArgs,
   dateFns,
   commandLineArgs,
   commandLineUsage,

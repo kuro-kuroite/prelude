@@ -39,6 +39,12 @@ Object.defineProperty(exports, "pararell", {
     return _atoms.pararell;
   }
 });
+Object.defineProperty(exports, "configCommandLineArgs", {
+  enumerable: true,
+  get: function get() {
+    return _organisms.configCommandLineArgs;
+  }
+});
 Object.defineProperty(exports, "DateFnsTz", {
   enumerable: true,
   get: function get() {

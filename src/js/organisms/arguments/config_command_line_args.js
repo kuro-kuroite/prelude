@@ -1,6 +1,11 @@
 import { commandLineArgs, commandLineUsage } from '../../atoms';
 
-export default function configCommandLineArgs(optionDefinitions, sections) {
+export default function configCommandLineArgs(
+  optionDefinitions,
+  sections,
+  argv,
+) {
+  process.argv = argv;
   const options = commandLineArgs(optionDefinitions);
   if (options.help) {
     const usage = commandLineUsage(sections);

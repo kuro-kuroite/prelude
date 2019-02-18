@@ -7,7 +7,8 @@ exports.default = configCommandLineArgs;
 
 var _atoms = require("../../atoms");
 
-function configCommandLineArgs(optionDefinitions, sections) {
+function configCommandLineArgs(optionDefinitions, sections, argv) {
+  process.argv = argv;
   var options = (0, _atoms.commandLineArgs)(optionDefinitions);
 
   if (options.help) {

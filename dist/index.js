@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "configEnv", {
+  enumerable: true,
+  get: function get() {
+    return _atoms.configEnv;
+  }
+});
 Object.defineProperty(exports, "fsAsync", {
   enumerable: true,
   get: function get() {

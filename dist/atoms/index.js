@@ -9,6 +9,12 @@ Object.defineProperty(exports, "DateFnsTzInfo", {
     return _date_fns_tz_info.default;
   }
 });
+Object.defineProperty(exports, "configEnv", {
+  enumerable: true,
+  get: function get() {
+    return _contigEnv.default;
+  }
+});
 Object.defineProperty(exports, "fsAsync", {
   enumerable: true,
   get: function get() {
@@ -29,6 +35,8 @@ Object.defineProperty(exports, "pararell", {
 });
 
 var _date_fns_tz_info = _interopRequireDefault(require("./date_fns_tz/date_fns_tz_info"));
+
+var _contigEnv = _interopRequireDefault(require("./dotenv/contigEnv"));
 
 var _promisifyAll = _interopRequireDefault(require("./fs/promisifyAll"));
 

@@ -3,6 +3,18 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "commandLineArgs", {
+  enumerable: true,
+  get: function get() {
+    return _atoms.commandLineArgs;
+  }
+});
+Object.defineProperty(exports, "commandLineUsage", {
+  enumerable: true,
+  get: function get() {
+    return _atoms.commandLineUsage;
+  }
+});
 Object.defineProperty(exports, "configEnv", {
   enumerable: true,
   get: function get() {

@@ -1,6 +1,6 @@
 import * as dateFns from 'date-fns';
-import { StringBuffer, pararell } from './atoms';
+import { fsAsync, StringBuffer, pararell } from './atoms';
 import { DateFnsTz } from './organisms';
 
 // eslint-disable-next-line import/prefer-default-export
-export { dateFns, DateFnsTz, StringBuffer, pararell };
+export { dateFns, DateFnsTz, fsAsync, StringBuffer, pararell };

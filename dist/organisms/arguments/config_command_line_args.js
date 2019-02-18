@@ -16,4 +16,6 @@ function configCommandLineArgs(optionDefinitions, sections) {
     console.log(usage);
     process.exit(0);
   }
+
+  return options;
 }

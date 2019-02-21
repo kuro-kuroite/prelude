@@ -39,10 +39,10 @@ Object.defineProperty(exports, "StringBuffer", {
     return _string_buffer.default;
   }
 });
-Object.defineProperty(exports, "pararell", {
+Object.defineProperty(exports, "parallel", {
   enumerable: true,
   get: function get() {
-    return _promise.pararell;
+    return _promise.parallel;
   }
 });
 

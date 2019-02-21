@@ -5,7 +5,7 @@ import {
   configEnv,
   fsAsync,
   StringBuffer,
-  pararell,
+  parallel,
 } from './atoms';
 import { configCommandLineArgs, DateFnsTz } from './organisms';
 
@@ -19,5 +19,5 @@ export {
   configEnv,
   fsAsync,
   StringBuffer,
-  pararell,
+  parallel,
 };

@@ -33,10 +33,10 @@ Object.defineProperty(exports, "StringBuffer", {
     return _atoms.StringBuffer;
   }
 });
-Object.defineProperty(exports, "pararell", {
+Object.defineProperty(exports, "parallel", {
   enumerable: true,
   get: function get() {
-    return _atoms.pararell;
+    return _atoms.parallel;
   }
 });
 Object.defineProperty(exports, "configCommandLineArgs", {

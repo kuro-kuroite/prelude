@@ -14,7 +14,15 @@ export default class DateFnsTz {
     });
   }
 
-  format(utcDateTime, formatString, options) {
+  format(
+    utcDateTime,
+    formatString,
+    options = {
+      locale: this.tz.language,
+      timeZone: this.tz.language.timeZone,
+      awareOfUnicodeTokens: true,
+    },
+  ) {
     const localDateTime = utcToZonedTime(
       utcDateTime,
       this.tz.language.timeZone,
@@ -24,10 +32,19 @@ export default class DateFnsTz {
   }
 
   toDate(dateTime) {
-    return toDate(dateTime, { timeZone: this.tz.language.code });
+    return toDate(dateTime, { timeZone: this.tz.language.timeZone });
   }
 
   zonedTimeToUtc(zonedTime) {
     return zonedTimeToUtc(zonedTime, this.tz.language.timeZone);
+  }
+
+  // NOTE: deprecated
+  utcToZonedTime(utcDateTime) {
+    // eslint-disable-next-line no-console
+    console.log('this method is deprecated');
+    // eslint-disable-next-line no-console
+    console.log('please use .toDate()');
+    return utcToZonedTime(utcDateTime, this.tz.language.timeZone);
   }
 }

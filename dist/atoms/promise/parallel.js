@@ -3,9 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = pararels;
+exports.default = parallel;
 
-function pararels() {
+function parallel() {
   for (var _len = arguments.length, promises = new Array(_len), _key = 0; _key < _len; _key++) {
     promises[_key] = arguments[_key];
   }

@@ -36,7 +36,12 @@ function () {
     }
   }, {
     key: "format",
-    value: function format(utcDateTime, formatString, options) {
+    value: function format(utcDateTime, formatString) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {
+        locale: this.tz.language,
+        timeZone: this.tz.language.timeZone,
+        awareOfUnicodeTokens: true
+      };
       var localDateTime = (0, _dateFnsTz.utcToZonedTime)(utcDateTime, this.tz.language.timeZone);
       return (0, _dateFnsTz.format)(localDateTime, formatString, options);
     }
@@ -44,13 +49,23 @@ function () {
     key: "toDate",
     value: function toDate(dateTime) {
       return (0, _dateFnsTz.toDate)(dateTime, {
-        timeZone: this.tz.language.code
+        timeZone: this.tz.language.timeZone
       });
     }
   }, {
     key: "zonedTimeToUtc",
     value: function zonedTimeToUtc(zonedTime) {
       return (0, _dateFnsTz.zonedTimeToUtc)(zonedTime, this.tz.language.timeZone);
+    } // NOTE: deprecated
+
+  }, {
+    key: "utcToZonedTime",
+    value: function utcToZonedTime(utcDateTime) {
+      // eslint-disable-next-line no-console
+      console.log('this method is deprecated'); // eslint-disable-next-line no-console
+
+      console.log('please use .toDate()');
+      return (0, _dateFnsTz.utcToZonedTime)(utcDateTime, this.tz.language.timeZone);
     }
   }]);
 
